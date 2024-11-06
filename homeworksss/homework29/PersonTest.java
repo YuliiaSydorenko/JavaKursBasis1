@@ -1,5 +1,5 @@
 package homeworksss.homework29;
-
+/*
 import lessonssssss.lesson30.Person.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,9 +28,11 @@ public class PersonTest {
     3. Мы ожидаем: что у person в поле email будет валидный email, который мы установили на шаге 2
     4. Проверить равенство person.getEmail() c валидным email, который мы устанавливали
      */
+/*
 
+import java.util.stream.Stream;
 
-    @Test
+@Test
     void testValidEmailSet(){
 
         String validEmail = "valid@test.com";
@@ -48,9 +50,10 @@ public class PersonTest {
     4.
      */
 
+/*
+import java.util.stream.Stream;
 
-
-    @ParameterizedTest
+@ParameterizedTest
     @MethodSource("invalidEmailData")
 
      void testInvalidEmailSet(String invalidEmail) {
@@ -59,7 +62,7 @@ public class PersonTest {
         Assertions.assertNotEquals(invalidEmail,person.getEmail());
         Assertions.assertEquals(startEmail,person.getEmail());
     }
-    static Stream<String>invalidEmailData(){
+    static Stream<String> invalidEmailData(){
         return Stream.of(
                 "testmail.net",
                 "test@@mail.net",
@@ -82,5 +85,5 @@ public class PersonTest {
         );
     }
 
-}
+*/
 

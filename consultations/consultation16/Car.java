@@ -1,4 +1,4 @@
-package lessonssssss.lesson38;
+package consultations.consultation16;
 public  class Car implements Comparable<Car> {
     private String model;
     private int year;
@@ -43,11 +43,17 @@ public  class Car implements Comparable<Car> {
                 '}';
     }
 
+
+    // Сравнение машин по году выпуска. "Меньшей" будет считаться машина с меньшим (более ранним) годом выпуска
     @Override
     public int compareTo(Car car1) {
         return this.year - car1.year;
-
-
+        /*
+        a vs b -> (a - b)
+        a < b -> отрицательное значение
+        a > b -> метод вернет положительное значение
+        a == b -> метод вернет 0
+         */
     }
 }
 
